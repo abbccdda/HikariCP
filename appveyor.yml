@@ -1,0 +1,5 @@
+test_script:
+  - mvn install -Dskip.unit.tests=true -Dmaven.javadoc.skip=true -V -B
+  - mvn test coveralls:report -V -P coverage 
+
+build: off
